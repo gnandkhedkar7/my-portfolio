@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className='hero'>
         <img src={profile_image} alt='profile_image' />
-        <h1><span>I'm Gauri Nandkhedkar,</span> frontend developer based in Freising, Germany.</h1>
+        <h1><span>I'm Gauri Nandkhedkar,</span> frontend developer based in Munich, Germany.</h1>
         <p>I am a frontend developer from India, with a 3+ years of experience with Barclays. </p>
         <div className="hero-action">
             <div className="hero-connect">
