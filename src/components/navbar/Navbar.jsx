@@ -5,7 +5,7 @@ import { LineChart, Dot, ArrowDownZA, Underline, Menu, X } from "lucide-react";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
-  const [page, setPage] = useState("about");
+  const [page, setPage] = useState("home");
   const menuRef = useRef();
 
   const openMenu = () => {
@@ -34,12 +34,12 @@ const Navbar = () => {
           </AnchorLink>
         </li>
         <li>
-          <AnchorLink className='anchor-link' offset={50} href='#about'>
+          <AnchorLink className='anchor-link' offset={50} href='#experience'>
           <p
             onClick={() => {
-              setPage("about");
+              setPage("experience");
             }}
-            className={page === "about" ? "nav-selected-page" : ""}
+            className={page === "experience" ? "nav-selected-page" : ""}
           >
             About me
           </p>
