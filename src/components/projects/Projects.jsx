@@ -4,7 +4,7 @@ import projects_data from '../../assets/projects_data';
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div id='projects' className='projects'>
         <div className="projects-title">
             <h1>Achievements</h1>
         </div>
