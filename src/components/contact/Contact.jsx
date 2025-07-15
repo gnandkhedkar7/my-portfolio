@@ -42,15 +42,15 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <Mail />
+              <Mail className="contact-icon" />
               <p>nandkhedkargauri99@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <Phone />
+              <Phone className="contact-icon" />
               <p>+49 176 56129352</p>
             </div>
             <div className="contact-detail">
-              <MapPin /> <p>Munich, Germany</p>
+              <MapPin className="contact-icon" /> <p>Munich, Germany</p>
             </div>
           </div>
         </div>
