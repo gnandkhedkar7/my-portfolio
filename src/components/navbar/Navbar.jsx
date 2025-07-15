@@ -65,7 +65,7 @@ const Navbar = () => {
             }}
             className={page === "projects" ? "nav-selected-page" : ""}
           >
-            Portfolio
+            Achievements
           </p>
           </AnchorLink>
         </li>

@@ -21,7 +21,7 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My resume</div>
+        <a href="/Resume.pdf" download className="hero-resume">My resume</a>
       </div>
     </div>
   );
