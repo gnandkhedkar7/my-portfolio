@@ -3,6 +3,30 @@ import "./Contact.css";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
+   const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "06bef66e-9bc5-4e79-9571-97d12b5e7bb7");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div id="contact" className="contact">
       <div className="contact-title">
@@ -29,7 +53,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="contact-right">
+        <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor=""> Your Name</label>
           <input type="text" placeholder="Please enter your name" name="name" />
           <label htmlFor="">Your Email</label>
@@ -47,7 +71,7 @@ const Contact = () => {
           <button type="submit" className="contact-submit">
             Submit now
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
