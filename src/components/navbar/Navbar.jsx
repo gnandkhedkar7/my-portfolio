@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg";
-import { LineChart, Dot, ArrowDownZA, Underline } from "lucide-react";
+import { LineChart, Dot, ArrowDownZA, Underline, Menu, X } from "lucide-react";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
   const [page, setPage] = useState("about");
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right="0";
+  }
+
+  const closeMenu = () => {
+    menuRef.current.style.right="-350px";
+  }
   return (
     <div className="navbar">
       <img className="nav-image" src={logo} alt="logo" />
-      <ul className="nav-menu">
+<Menu className="nav-mob-open" onClick={openMenu}/>
+      <ul ref={menuRef} className="nav-menu">
+        <X className="nav-mob-close" onClick={closeMenu}/>
         <li>
           <AnchorLink className="anchor-link" href="#home">
             <p
