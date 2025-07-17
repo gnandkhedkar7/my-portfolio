@@ -9,7 +9,7 @@ const Skills = () => {
             <h1>Skills & Expertise</h1>
         </div>
         <div className="skills-container">
-            {Skills_Data.map((skill, index) => {
+            {Skills_Data.map((skill) => {
                 return <div className="skills-format" key={skill.s_no}>
                     <h2>{skill.s_name}</h2>
                     <p>{skill.s_desc}</p>

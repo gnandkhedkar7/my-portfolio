@@ -9,7 +9,7 @@ const Projects = () => {
             <h1>Achievements</h1>
         </div>
         <div className="projects-container">
-            {projects_data.map((project, index) => {
+            {projects_data.map((project) => {
                 return <div className="projects-format" key={project.p_no}>
                     <h2>{project.p_name}</h2>
                     <p>{project.p_desc}</p>
