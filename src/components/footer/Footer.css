@@ -74,6 +74,31 @@
     width: 100px;
 }
 
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background: #32323B;
+  transition: 0.3s;
+}
+
+.footer-social-icon:hover {
+  background: #df8908;
+}
+
+.footer-social-icon svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
 @media(max-width:768px) {
     .footer{
         margin: 50px 70px;

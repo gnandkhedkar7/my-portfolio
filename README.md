@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal portfolio! This website showcases my skills, projects, and experiences as a web developer. It is built with **Next.js**, **Tailwind CSS**, and hosted on **Vercel**.
+Welcome to my personal portfolio! This website showcases my skills, projects, and experiences as a web developer. It is built with **React.js**, **Tailwind CSS**, and hosted on **Vercel**.
 
 ## Live Version
 
