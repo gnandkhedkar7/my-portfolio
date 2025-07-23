@@ -58,6 +58,23 @@
     display: none;
 }
 
+.navbar-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px; /* Add space between nav links and icons */
+}
+
+.navbar-icon-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-icon-link:hover {
+  color: #df8908;
+}
+
+
 @media (max-width: 768px) {
   .navbar {
     margin: 20px 50px;
@@ -95,5 +112,8 @@
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
+  }
+  .navbar-social-icons{
+    display: none;
   }
 }
